@@ -1,0 +1,16 @@
+<launch>
+
+  <!-- Launch static transform publishers -->
+  <!-- T265 pointing forward - 5" in front and 3" down from center of FC -->
+  <node pkg="tf" type="static_transform_publisher" name="tf_baseLink_cameraPose"
+        args="0.08 0 0 0 0 0 base_link d430_camera 1000"/>
+
+  <!-- Launch static transform publishers -->
+  <node pkg="tf" type="static_transform_publisher" name="tf_odom_cameraOdom"
+        args="0 0 0 0 0 0 odom d430_odom 1000"/>
+
+  <!-- Bridge node -->
+  <node name="apm_d430_bridge_node" pkg="apm_d430_bridge" type="apm_d430_bridge_node" output="screen" >
+  </node>
+
+</launch>

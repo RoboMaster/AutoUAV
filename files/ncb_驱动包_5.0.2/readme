@@ -1,0 +1,10 @@
+### NCB00 USB-OTG and TF socket driver setup
+
+## FOR EMMC NX module
+	// ON NX
+	1, sudo cp kernel_tegra194-p3668-0001-ncb00.dtb* /boot/dtb/
+	2, sudo cp extlinux.conf /boot/extlinux/ 
+	3, sudo reboot //important!!!
+## USE TF card of NCB as rootfs
+   1, Edit extlinux.conf to switch emmc and tf as rootfs  // ON emmc 
+   2, ON TF card: cp extlinux-tf.conf /boot/extlinux/extlinux.conf //

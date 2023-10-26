@@ -1,0 +1,14 @@
+<!-- // #  Copyright © 2023 ROBOMASTER All Rights Reserved.
+// #  You may use, distribute and modify this code under the
+// #  terms of the MIT license, which unfortunately won't be
+// #  written for another century. -->
+
+<launch>
+
+<include file="$(find d430_slam)/launch/d430_slam.launch" >
+  </include>
+
+<include file="$(find apm_d430_bridge)/launch/apm_bridge_mavros.launch" >
+  </include>
+
+</launch>

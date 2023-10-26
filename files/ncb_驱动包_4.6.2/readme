@@ -1,0 +1,15 @@
+### NCB00 USB-OTG and TF socket driver setup
+
+## FOR EMMC NX module
+	// ON PC
+	1, cp tegra194-p3668-all-p3509-0000-ncb.dtb ~/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_XAVIER_NX_TARGETS/Linux_for_Tegra/kernel/dtb/tegra194-p3668-all-p3509-0000.dtb
+	2, Let NX/NANO enter recovery mode and connect to PC via micro-USB
+	3, cd ~/nvidia/nvidia_sdk/JetPack_4.6_Linux_JETSON_XAVIER_NX_TARGETS/Linux_for_Tegra
+	4, sudo ./flash.sh -r -k kernel-dtb p3449-0000+p3668-0001-qspi-emmc mmcblk0p1
+	5, wait NX/NANO booting up.  
+
+	// On NX
+	1, cp extlinux.conf /boot/extlinux/ 
+	2, reboot //important!!!
+
+

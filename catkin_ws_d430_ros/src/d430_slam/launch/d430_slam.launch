@@ -1,0 +1,12 @@
+<!-- // #  Copyright © 2023 ROBOMASTER All Rights Reserved.
+// #  You may use, distribute and modify this code under the
+// #  terms of the MIT license, which unfortunately won't be
+// #  written for another century. -->
+
+<launch>
+
+  <node name="d430_slam_node" pkg="d430_slam" type="d430_slam_node" output="screen" >
+    <!-- <rosparam param="input_topic" subst_value="True">$(arg input_topic)</rosparam> -->
+  </node>
+
+</launch>
